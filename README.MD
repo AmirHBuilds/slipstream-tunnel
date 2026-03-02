@@ -137,7 +137,4 @@ If you choose **Option 2** (Local Files) in Iran setup, ensure these files exist
 - `ca-certificates_20240203_all.deb`
 - `libssl3t64_3.0.13-0ubuntu3.6_amd64.deb`
 
----
-**Credits:** Based on Amo Mamad's tutorial.
-**Donate (Tron):** `TJ2FvNqyqxkwhs9W1dLT74ggN3LNTESXuf`
 ```
