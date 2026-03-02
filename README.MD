@@ -3,8 +3,6 @@
 
 An automated Bash script to easily set up, manage, and monitor the **Slipstream DNS Tunnel** on both Client (Iran) and Server (Kharej) sides. This script handles dependencies, file fetching, certificate generation, and systemd service creation automatically.
 
-**GitHub Repository:** [AmirHBuilds/slipstream-tunnel](https://github.com/AmirHBuilds/slipstream-tunnel)
-
 ---
 
 ## 🇬🇧 English Documentation
