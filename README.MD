@@ -24,7 +24,7 @@ An automated Bash script to easily set up, manage, and monitor the **Slipstream 
 Run this single command on your server to download and start the script immediately:
 
 ```bash
-sudo bash <(curl -Ls https://raw.githubusercontent.com/AmirHBuilds/slipstream-tunnel/refs/heads/main/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/AmirHBuilds/slipstream-tunnel/refs/heads/main/install.sh)
 ```
 
 #### Method 2: Manual / Local Install
@@ -86,7 +86,7 @@ Run the script again (`./install.sh` or the curl command) to access the menu:
 کد زیر را کپی کرده و در ترمینال سرور خود اجرا کنید:
 
 ```bash
-sudo bash <(curl -Ls https://raw.githubusercontent.com/AmirHBuilds/slipstream-tunnel/refs/heads/main/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/AmirHBuilds/slipstream-tunnel/refs/heads/main/install.sh)
 ```
 
 #### روش ۲: نصب دستی / لوکال
