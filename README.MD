@@ -47,7 +47,8 @@ If you already have `install.sh` on your server or prefer to download it manuall
 Select **Option 2** in the menu.
 - **Prerequisite:** Port `53` (UDP/TCP) must be free. The script will attempt to stop `systemd-resolved`.
 - **Domain:** Enter your tunnel domain (e.g., `ns.example.com`).
-- **Target Port:** Enter the local port where your Proxy/VPN (X-UI, V2Ray, etc.) is listening (e.g., `1087`).
+- **Target Port:** Enter the local inbound port that is **SOCKS or Shadowsocks only** (e.g., `1087`).
+- **⚠️ IMPORTANT (LARGE NOTE):** VLESS and other protocols fail in this mode. Only SOCKS/Shadowsocks works.
 - **Result:** The script generates certificates and starts the server listening on Port 53.
 
 #### 2. Iran (Domestic) Server Setup
@@ -56,7 +57,8 @@ Select **Option 1** in the menu.
   - Select `1` to download files from GitHub automatically.
   - Select `2` if you have the files locally (useful for restricted networks). You will be asked for the folder path.
 - **Domain:** Enter the **same domain** used on the Kharej server.
-- **Port:** Enter the port you want to listen on (e.g., `1087`).
+- **Port:** Enter the local listening port that maps to a **SOCKS or Shadowsocks inbound** (e.g., `1087`).
+- **⚠️ IMPORTANT (LARGE NOTE):** Do not use VLESS (or other protocols) for this port; they fail here.
 - **DNS:** Enter a DNS resolver (default: `8.8.8.8`).
 
 #### 3. Management
@@ -109,7 +111,8 @@ bash <(curl -Ls https://raw.githubusercontent.com/AmirHBuilds/slipstream-tunnel/
 گزینه **2** را انتخاب کنید.
 - **پورت ۵۳:** این پورت باید آزاد باشد (اسکریپت سعی می‌کند سرویس‌های مزاحم را غیرفعال کند).
 - **Domain:** دامنه تانل را وارد کنید (دامنه‌ای که رکورد NS دارد).
-- **Target Port:** پورتی که پنل یا پروکسی شما (مثل X-UI) روی آن در حال اجراست را وارد کنید (مثلاً `1087`).
+- **Target Port:** پورت ورودی لوکال را وارد کنید که فقط از نوع **SOCKS یا Shadowsocks** باشد (مثلاً `1087`).
+- **⚠️ نکته مهم (با تاکید):** پروتکل VLESS و سایر پروتکل‌ها در این حالت خطا می‌دهند و کار نمی‌کنند.
 - **نتیجه:** اسکریپت سرتیفیکیت می‌سازد و روی پورت ۵۳ آماده دریافت ترافیک می‌شود.
 
 #### ۲. تنظیمات سرور ایران (Iran)
@@ -118,7 +121,8 @@ bash <(curl -Ls https://raw.githubusercontent.com/AmirHBuilds/slipstream-tunnel/
   - عدد `1` را بزنید تا فایل‌ها از اینترنت دانلود شوند.
   - عدد `2` را بزنید اگر فایل‌ها را دستی روی سرور ریخته‌اید (باید آدرس پوشه فایل‌ها را وارد کنید).
 - **Domain:** همان دامنه‌ای که در سرور خارج تنظیم کردید را وارد کنید.
-- **Port:** پورتی که می‌خواهید در ایران باز شود (مثلاً `1087`).
+- **Port:** پورتی را وارد کنید که به یک ورودی **SOCKS یا Shadowsocks** وصل می‌شود (مثلاً `1087`).
+- **⚠️ نکته مهم (با تاکید):** برای این قسمت از VLESS یا پروتکل‌های دیگر استفاده نکنید چون fail می‌شود.
 - **DNS:** آدرس DNS را وارد کنید (پیش‌فرض `8.8.8.8` مناسب است).
 
 #### ۳. مدیریت

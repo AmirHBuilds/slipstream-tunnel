@@ -120,7 +120,7 @@ setup_iran() {
     print_input "Enter Tunnel Domain (e.g., b.example.com):"
     read -p "Domain: " DOMAIN
 
-    print_input "Enter Port to Forward (This is the port you connect to, e.g., 1087):"
+    print_input "Enter Port to Forward (Use SOCKS/Shadowsocks inbound port only; VLESS/other protocols fail, e.g., 1087):"
     read -p "Port: " PORT
 
     print_input "Enter DNS Resolver (Default: 8.8.8.8):"
@@ -165,7 +165,7 @@ setup_kharej() {
     print_input "Enter Tunnel Domain (The NS record domain, e.g., b.example.com):"
     read -p "Domain: " DOMAIN
 
-    print_input "Enter Target Port (The port where your Proxy/VPN listens, e.g., 1087):"
+    print_input "Enter Target Port (Must be SOCKS/Shadowsocks inbound port; VLESS/other protocols fail, e.g., 1087):"
     read -p "Target Port: " PORT
 
     # Create Service
